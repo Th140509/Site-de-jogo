@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho e Rodapé */
+header, footer {
+    background-color: #1e3d59;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+/* Tabuleiro */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 450px;
+}
+
+.territory {
+    border: 2px solid #444;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #37474F;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.territory:hover {
+    background-color: #546e7a;
+    transform: scale(1.05);
+}
+
+/* Cores para jogadores */
+.territory.player1 {
+    background-color: #2a9d8f;
+}
+
+.territory.player2 {
+    background-color: #e76f51;
+}
+
+/* Painel lateral */
+#info-panel {
+    width: 280px;
+    background-color: #263238;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+#info-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+
+#turn-info, #action-panel {
+    margin-bottom: 1.2em;
+}
+
+/* Botão de turno */
+button {
+    padding: 12px 20px;
+    background-color: #ffb703;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}

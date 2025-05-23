@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>War Combat - Protótipo de Jogo Estratégico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte moderna (já usada no CSS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>🎖️ War Combat</h1>
+    <p>Jogo de combate estratégico por turnos - Protótipo Web</p>
+  </header>
+
+  <main role="main">
+    <section id="game-board" aria-label="Tabuleiro de Jogo" role="region"></section>
+
+    <aside id="info-panel" aria-label="Painel de Informações" role="complementary">
+      <h2>Informações</h2>
+      <div id="turn-info">Carregando...</div>
+      <div id="action-panel">Aguardando jogada...</div>
+      <button id="end-turn" aria-label="Finalizar turno">Finalizar Turno</button>
+    </aside>
+  </main>
+
+  <footer role="contentinfo">
+    <p>⚔️ Protótipo inspirado em War | Tema Militarizado</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
